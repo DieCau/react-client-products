@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import Table from "react-bootstrap/Table";
 import { Button } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
@@ -106,7 +106,7 @@ export const Admin = () => {
           <img src={Logo} className="d-flex" alt=""></img>
         </div>
         <div className="ms-4 text-start">
-          <h1 className="display-5 fw-semibold">Rolling Store</h1>
+          <h1 className="display-5 fw-semibold">Tecno Store</h1>
           <h4 className="">Admin</h4>
         </div>
       </section>
@@ -195,11 +195,11 @@ export const Admin = () => {
               <option disabled hidden value="">
                 Elegir categoria
               </option>
-              <option value="mug">Tazas</option>
-              <option value="notepad">Libretas</option>
-              <option value="keychain">Llaveros</option>
-              <option value="hat">Gorras</option>
-              <option value="bottle">Botellas</option>
+              <option value="Teclados">Teclados</option>
+              <option value="Notebooks">Notebooks</option>
+              <option value="Camaras">Camaras</option>
+              <option value="Parlantes">Parlantes</option>
+              <option value="Ratones">Ratones</option>
             </Form.Select>
             <section className="w-100 d-flex justify-content-center">
               <Image
@@ -289,11 +289,11 @@ export const Admin = () => {
               <option disabled hidden value="">
                 Elegir categoria
               </option>
-              <option value="mug">Tazas</option>
-              <option value="notepad">Libretas</option>
-              <option value="keychain">Llaveros</option>
-              <option value="hat">Gorras</option>
-              <option value="bottle">Botellas</option>
+              <option value="Teclados">Teclados</option>
+              <option value="Notebooks">Notebooks</option>
+              <option value="Camaras">Camaras</option>
+              <option value="Parlantes">Parlantes</option>
+              <option value="Ratones">Ratones</option>
             </Form.Select>
             <section className="w-100 d-flex justify-content-center">
               <Image

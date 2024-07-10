@@ -296,11 +296,11 @@ export const Home = () => {
               <option disabled hidden value="">
                 Filtrar por categoria
               </option>
-              <option value="mug">Tazas</option>
-              <option value="notepad">Libretas</option>
-              <option value="keychain">Llaveros</option>
-              <option value="hat">Gorras</option>
-              <option value="bottle">Botellas</option>
+              <option value="Teclados">Teclados</option>
+              <option value="Notebooks">Notebooks</option>
+              <option value="Camaras">Camaras</option>
+              <option value="Parlantes">Parlantes</option>
+              <option value="Ratones">Ratones</option>
             </Form.Select>
           </div>
           <div className="col-md-2">

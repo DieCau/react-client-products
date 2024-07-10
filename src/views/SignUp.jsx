@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import { ShowPasswordButton } from "../components/ShowPasswordButton";
 import axios from "axios";
 import { setToken } from "../helpers/setToken";
@@ -23,7 +23,7 @@ export const SignUp = () => {
 
   const onSubmit = async (formData) => {
     setLoading(true);
-     console.log(formData);
+
     try {
       const res = await axios.post(`${BASE_URL}/user`, formData);
       const data = res.data;
@@ -56,8 +56,8 @@ export const SignUp = () => {
           <div className="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
             <img src={Logo} className="img-fluid w-25" alt="" />
             <div className="ms-4 text-start">
-              <h1 className="display-5 fw-semibold">Rolling Store</h1>
-              <h4>Sign Up</h4>
+              <h1 className="display-5 fw-semibold">Tecno Store</h1>
+              <h4>Registro</h4>
             </div>
           </div>
           <Form.Group className="mb-3 " controlId="formBasicEmail">

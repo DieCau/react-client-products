@@ -22,7 +22,7 @@ function Navigation() {
     <Navbar expand="lg" className="bg-body-tertiary w-100">
       <Container className="mx-3 w-100">
         <Navbar.Brand href="/">
-          <Image className="img-fluid w-25" src="/src/assets/logo.png"></Image>
+          <Image className="img-fluid w-25" src="/src/assets/logo1.png"></Image>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

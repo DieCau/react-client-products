@@ -11,9 +11,9 @@ export const Footer = () => {
         <div className="col-12 col-md-4 p-4 py-2 text-center">
           <a href="/">
             <img
-              src="/src/assets/logo.png"
+              src="/src/assets/logo1.png"
               alt="Logo de Rolling Store"
-              className="img-fluid"
+              className="img-fluid w-25"
             />
           </a>
         </div>
@@ -113,7 +113,7 @@ export const Footer = () => {
         </div>
         <div className="col-12 pt-2 border-top border-2">
           <p className="text-white text-center">
-            &copy; 2022 <b>Rolling Store</b> - Todos los Derechos Reservados.
+            &copy; 2024 <b>Tecno Store</b> - Todos los Derechos Reservados.
           </p>
         </div>
       </div>

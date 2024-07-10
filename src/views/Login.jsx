@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import { ShowPasswordButton } from "../components/ShowPasswordButton";
 import { emailRegex } from "../helpers/emailRegex";
 import axios from "axios";
@@ -53,10 +53,10 @@ export const Login = () => {
       <section className="container vh-100 mt-5 w-100 d-flex justify-content-center">
         <Form noValidate onSubmit={handleSubmit(onSubmit)}>
           <div className="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
-            <img src={Logo} className="img-fluid w-25" alt="" />
+            <img src={Logo} className="img-fluid w-25" alt="logo" />
             <div className="ms-4 text-start">
-              <h1 className="display-5 fw-semibold">Rolling Store</h1>
-              <h4>Login</h4>
+              <h1 className="display-5 fw-semibold">Tecno Store</h1>
+              <h4>Ingresar</h4>
             </div>
           </div>
           <Form.Group className="mb-3 " controlId="formBasicEmail">
