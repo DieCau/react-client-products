@@ -40,7 +40,11 @@ export const Admin = () => {
   const fetchAllProducts = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`${BASE_URL}/products`);
+      const res = await axios.get(`${BASE_URL}/products`, {
+        headers: {
+          "auth-token" : token,
+        },
+      });
 
       if (res.status == 200) {
         const data = res.data;
@@ -48,7 +52,10 @@ export const Admin = () => {
       }
 
     } catch (error) {
-      console.log(error);
+      if(error.response.status == 403) {
+        window.location.href = "/";
+      }
+      
     } finally {
       setLoading(false);
     }

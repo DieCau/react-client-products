@@ -48,23 +48,37 @@ function Navigation() {
               Sobre Nosotros
             </Nav.Link>
 
-            <Nav.Link href="/login">
-              Ingresar <i className="bi bi-box-arrow-in-right"></i>
-            </Nav.Link>
+            {token ? (
+              ""
+            ) : (
+              <>
+                <Nav.Link href="/login">
+                  Ingresar <i className="bi bi-box-arrow-in-right"></i>
+                </Nav.Link>
 
-            <Nav.Link href="/signUp">
-              Registrarse <i className="bi bi-person-add"></i>
-            </Nav.Link>
+                <Nav.Link href="/signUp">
+                  Registrarse <i className="bi bi-person-add"></i>
+                </Nav.Link>
+              </>
+            )}
 
-            <Nav.Link href="/admin">
-              Admin <i className="bi bi-wrench"></i>
-            </Nav.Link>
+            {key == ADMIN_KEY ? (
+              <Nav.Link href="/admin">
+                Admin <i className="bi bi-wrench"></i>
+              </Nav.Link>
+            ) : (
+              ""
+            )}
 
-            <Nav.Link>
-              <Button variant="" onClick={logout}>
-                Cerrar sesión <i className="bi bi-box-arrow-in-left"></i>{" "}
-              </Button>
-            </Nav.Link>
+            {token ? (
+              <Nav.Link>
+                <Button variant="" onClick={logout}>
+                  Cerrar sesión <i className="bi bi-box-arrow-in-left"></i>{" "}
+                </Button>
+              </Nav.Link>
+            ) : (
+              ""
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

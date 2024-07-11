@@ -25,7 +25,11 @@ export const Login = () => {
     try {
       const res = await axios.post(`${BASE_URL}/login`, formData);
       const data = res.data;
-      setToken(data);
+      
+      setToken("auth-token", data.token);
+      setToken("key", data.key);
+      alert("Has ingresado exitosamente!");
+      window.location.href = '/';
     } catch (error) {
       console.log(error);
 
